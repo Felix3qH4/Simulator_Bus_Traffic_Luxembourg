@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="./data/Leaflet/leaflet.css"></link>
+    <script src="./data/Leaflet/leaflet.js"></script>
+    <script src="./data/Leaflet/MovingMarker.js"></script>
+    <link rel="stylesheet" href="style.css">
+</html>
+
+<body>
+    <div id="map"></div>
+    <script src="./data/cached/bus_positions.json"></script>
+    <script src="./data/Routes/222.geojson"></script>
+    <script src="./data/cached/test.json"></script>
+    <script src="./data/lines.json"></script>
+    <script>
+        function load_js() {
+            var head = document.getElementsByTagName('body')[0];
+            var script = document.createElement('script');
+            script.src = './data/cached/bus_positions.json';
+            head.appendChild(script);
+        };
+        
+        var rel = window.setInterval(function() {
+            load_js();
+        }, 1000); //equals 10 seconds
+    </script>
+
+    <script src="script.js"></script>
+</body>
