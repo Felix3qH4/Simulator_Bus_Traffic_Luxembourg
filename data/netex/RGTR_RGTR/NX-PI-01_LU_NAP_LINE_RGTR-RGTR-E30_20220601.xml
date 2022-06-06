@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<PublicationDelivery xmlns="http://www.netex.org.uk/netex" version="ntx:1.1">
+
+  <PublicationTimestamp>2022-06-01T14:36:58</PublicationTimestamp>
+
+  <ParticipantRef>LU</ParticipantRef>
+
+  <PublicationRequest>
+    <RequestTimestamp>2022-06-01T14:36:58</RequestTimestamp>
+    <topics>
+      <NetworkFrameTopic>
+        <Current/>
+        <NetworkFilterByValue>
+          <objectReferences>
+            <TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1.0"/>
+            <LineRef ref="LU::Line:3379::" version="1654087018"/>
+          </objectReferences>
+        </NetworkFilterByValue>
+      </NetworkFrameTopic>
+    </topics>
+  </PublicationRequest>
+
+  <dataObjects>
+    <CompositeFrame id="LU::CompositeFrame_EU_PI_LINE_OFFER:RGTR-RGTR-E30" version="1654087018">
+      <ValidBetween>
+        <FromDate>2022-06-01T00:00:00</FromDate>
+        <ToDate>2022-06-30T00:00:00</ToDate>
+      </ValidBetween>
+      <TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1.0"/>
+      <codespaces>
+        <Codespace id="epip_data">
+          <Xmlns>epd</Xmlns>
+          <XmlnsUrl>http://netex-cen.eu/epip_data</XmlnsUrl>
+          <Description>EPIP data</Description>
+        </Codespace>
+      </codespaces>
+      <FrameDefaults>
+        <DefaultCodespaceRef ref="epip_data"/>
+        <DefaultDataSourceRef ref="epip_data:DataSource:General"/>
+        <DefaultResponsibilitySetRef ref="LU::ResponsibilitySet:337::" version="1654087018"/>
+        <DefaultLocale>
+          <TimeZone>Europe/Berlin</TimeZone>
+          <DefaultLanguage>GERMAN</DefaultLanguage>
+        </DefaultLocale>
+        <DefaultLocationSystem>urn:ogc:def:crs:EPSG::4326</DefaultLocationSystem>
+      </FrameDefaults>
+      <frames>
+        <ResourceFrame id="LU::ResourceFrame_EU_PI_COMMON:RGTR-RGTR-E30" version="1654087018">
+          <TypeOfFrameRef ref="epip:EU_PI_COMMON" versionRef="1.0"/>
+          <dataSources>
+            <DataSource id="epip_data:DataSource:General" version="1654087018">
+              <Name>LU</Name>
+            </DataSource>
+          </dataSources>
+          <responsibilitySets>
+            <ResponsibilitySet id="LU::ResponsibilitySet:337::" version="1654087018">
+              <roles>
+                <ResponsibilityRoleAssignment id="LU::ResponsibilityRoleAssignment:337::" version="1654087018">
+                  <DataRoleType>creates</DataRoleType>
+                  <ResponsibleOrganisationRef ref="LU::Authority:126::" version="1654087018"/>
+                </ResponsibilityRoleAssignment>
+              </roles>
+            </ResponsibilitySet>
+          </responsibilitySets>
+          <organisations>
+            <Authority id="LU::Authority:126::" version="1654087018">
+              <PublicCode>RGTR</PublicCode>
+              <Name>RGTR</Name>
+              <ShortName>RGTR</ShortName>
+              <LegalName>RGTR</LegalName>
+              <ContactDetails>
+                <Phone>24784946</Phone>
+              </ContactDetails>
+              <OrganisationType>authority</OrganisationType>
+              <Address id="LU::Address:337::" version="1654087018">
+                <Street>4, Place de l'Europe</Street>
+                <PostCode>1499</PostCode>
+              </Address>
+            </Authority>
+            <Operator id="LU::Operator:1::" version="1654087018">
+              <PublicCode>RGTR</PublicCode>
+              <Name>Régime Général des Transports Routiers</Name>
+              <ShortName>RGTR</ShortName>
+              <LegalName>Régime Général des Transports Routiers</LegalName>
+              <ContactDetails/>
+              <OrganisationType>operator</OrganisationType>
+              <Address/>
+            </Operator>
+          </organisations>
+        </ResourceFrame>
+        <ServiceCalendarFrame id="LU::ServiceCalendarFrame_EU_PI_CALENDAR:RGTR-RGTR-E30" version="1654087018">
+          <TypeOfFrameRef ref="epip:EU_PI_CALENDAR" versionRef="1.0"/>
+          <ServiceCalendar id="LU::ServiceCalendar:337::" version="1654087018">
+            <FromDate>2022-06-01</FromDate>
+            <ToDate>2022-06-30</ToDate>
+          </ServiceCalendar>
+        </ServiceCalendarFrame>
+        <ServiceFrame id="LU::ServiceFrame_EU_PI_NETWORK:RGTR-RGTR-E30" version="1654087018">
+          <TypeOfFrameRef ref="epip:EU_PI_NETWORK" versionRef="1.0"/>
+          <lines>
+            <Line id="LU::Line:3379::" version="1654087018">
+              <Name>E30</Name>
+              <ShortName>E30</ShortName>
+              <TransportMode>bus</TransportMode>
+              <PublicCode>E30</PublicCode>
+              <PrivateCode>E30</PrivateCode>
+              <AuthorityRef ref="LU::Authority:126::" version="1654087018"/>
+              <additionalOperators>
+                <OperatorRef ref="LU::Operator:1::" version="1654087018"/>
+              </additionalOperators>
+              <allowedDirections/>
+            </Line>
+          </lines>
+        </ServiceFrame>
+        <SiteFrame id="LU::SiteFrame_EU_PI_STOP:RGTR-RGTR-E30" version="1654087018">
+          <TypeOfFrameRef ref="epip:EU_PI_STOP" versionRef="1.0"/>
+        </SiteFrame>
+        <TimetableFrame id="LU::TimetableFrame_EU_PI_TIMETABLE:RGTR-RGTR-E30" version="1654087018">
+          <TypeOfFrameRef ref="epip:EU_PI_TIMETABLE" versionRef="1.0"/>
+        </TimetableFrame>
+      </frames>
+    </CompositeFrame>
+  </dataObjects>
+
+</PublicationDelivery>
