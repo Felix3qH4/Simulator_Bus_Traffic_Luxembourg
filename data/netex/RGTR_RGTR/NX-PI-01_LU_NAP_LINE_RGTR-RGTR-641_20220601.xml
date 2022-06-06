@@ -1,0 +1,2441 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<PublicationDelivery xmlns="http://www.netex.org.uk/netex" version="ntx:1.1">
+
+  <PublicationTimestamp>2022-06-01T14:36:58</PublicationTimestamp>
+
+  <ParticipantRef>LU</ParticipantRef>
+
+  <PublicationRequest>
+    <RequestTimestamp>2022-06-01T14:36:58</RequestTimestamp>
+    <topics>
+      <NetworkFrameTopic>
+        <Current/>
+        <NetworkFilterByValue>
+          <objectReferences>
+            <TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1.0"/>
+            <LineRef ref="LU::Line:2784::" version="1654087018"/>
+          </objectReferences>
+        </NetworkFilterByValue>
+      </NetworkFrameTopic>
+    </topics>
+  </PublicationRequest>
+
+  <dataObjects>
+    <CompositeFrame id="LU::CompositeFrame_EU_PI_LINE_OFFER:RGTR-RGTR-641" version="1654087018">
+      <ValidBetween>
+        <FromDate>2022-06-01T00:00:00</FromDate>
+        <ToDate>2022-06-30T00:00:00</ToDate>
+      </ValidBetween>
+      <TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1.0"/>
+      <codespaces>
+        <Codespace id="epip_data">
+          <Xmlns>epd</Xmlns>
+          <XmlnsUrl>http://netex-cen.eu/epip_data</XmlnsUrl>
+          <Description>EPIP data</Description>
+        </Codespace>
+      </codespaces>
+      <FrameDefaults>
+        <DefaultCodespaceRef ref="epip_data"/>
+        <DefaultDataSourceRef ref="epip_data:DataSource:General"/>
+        <DefaultResponsibilitySetRef ref="LU::ResponsibilitySet:120::" version="1654087018"/>
+        <DefaultLocale>
+          <TimeZone>Europe/Berlin</TimeZone>
+          <DefaultLanguage>GERMAN</DefaultLanguage>
+        </DefaultLocale>
+        <DefaultLocationSystem>urn:ogc:def:crs:EPSG::4326</DefaultLocationSystem>
+      </FrameDefaults>
+      <frames>
+        <ResourceFrame id="LU::ResourceFrame_EU_PI_COMMON:RGTR-RGTR-641" version="1654087018">
+          <TypeOfFrameRef ref="epip:EU_PI_COMMON" versionRef="1.0"/>
+          <dataSources>
+            <DataSource id="epip_data:DataSource:General" version="1654087018">
+              <Name>LU</Name>
+            </DataSource>
+          </dataSources>
+          <responsibilitySets>
+            <ResponsibilitySet id="LU::ResponsibilitySet:120::" version="1654087018">
+              <roles>
+                <ResponsibilityRoleAssignment id="LU::ResponsibilityRoleAssignment:120::" version="1654087018">
+                  <DataRoleType>creates</DataRoleType>
+                  <ResponsibleOrganisationRef ref="LU::Authority:126::" version="1654087018"/>
+                </ResponsibilityRoleAssignment>
+              </roles>
+            </ResponsibilitySet>
+          </responsibilitySets>
+          <organisations>
+            <Authority id="LU::Authority:126::" version="1654087018">
+              <PublicCode>RGTR</PublicCode>
+              <Name>RGTR</Name>
+              <ShortName>RGTR</ShortName>
+              <LegalName>RGTR</LegalName>
+              <ContactDetails>
+                <Phone>24784946</Phone>
+              </ContactDetails>
+              <OrganisationType>authority</OrganisationType>
+              <Address id="LU::Address:120::" version="1654087018">
+                <Street>4, Place de l'Europe</Street>
+                <PostCode>1499</PostCode>
+              </Address>
+            </Authority>
+            <Operator id="LU::Operator:1::" version="1654087018">
+              <PublicCode>RGTR</PublicCode>
+              <Name>Régime Général des Transports Routiers</Name>
+              <ShortName>RGTR</ShortName>
+              <LegalName>Régime Général des Transports Routiers</LegalName>
+              <ContactDetails/>
+              <OrganisationType>operator</OrganisationType>
+              <Address/>
+            </Operator>
+            <Authority id="LU::Authority:1::" version="1654087018">
+              <PublicCode>CdT</PublicCode>
+              <Name>CdT (Master)</Name>
+              <ShortName>CdT</ShortName>
+              <LegalName>CdT (Master)</LegalName>
+              <ContactDetails/>
+              <OrganisationType>authority</OrganisationType>
+              <Address/>
+            </Authority>
+          </organisations>
+        </ResourceFrame>
+        <ServiceCalendarFrame id="LU::ServiceCalendarFrame_EU_PI_CALENDAR:RGTR-RGTR-641" version="1654087018">
+          <TypeOfFrameRef ref="epip:EU_PI_CALENDAR" versionRef="1.0"/>
+          <ServiceCalendar id="LU::ServiceCalendar:120::" version="1654087018">
+            <FromDate>2022-06-01</FromDate>
+            <ToDate>2022-06-30</ToDate>
+            <dayTypes>
+              <DayType id="LU::DayType:295::" version="1654087018"/>
+            </dayTypes>
+            <operatingPeriods>
+              <UicOperatingPeriod id="LU::UicOperatingPeriod:295::" version="1654087018">
+                <FromDate>2022-06-01T00:00:00</FromDate>
+                <ToDate>2022-06-30T00:00:00</ToDate>
+                <ValidDayBits>111000111100111110011101001111</ValidDayBits>
+              </UicOperatingPeriod>
+            </operatingPeriods>
+            <dayTypeAssignments>
+              <DayTypeAssignment id="LU::DayTypeAssignment:295::" order="1" version="1654087018">
+                <OperatingPeriodRef ref="LU::UicOperatingPeriod:295::" version="1654087018"/>
+                <DayTypeRef ref="LU::DayType:295::" version="1654087018"/>
+                <isAvailable>true</isAvailable>
+              </DayTypeAssignment>
+            </dayTypeAssignments>
+          </ServiceCalendar>
+        </ServiceCalendarFrame>
+        <ServiceFrame id="LU::ServiceFrame_EU_PI_NETWORK:RGTR-RGTR-641" version="1654087018">
+          <TypeOfFrameRef ref="epip:EU_PI_NETWORK" versionRef="1.0"/>
+          <directions>
+            <Direction id="LU::Direction:1::" version="1654087018">
+              <Name>1</Name>
+              <ShortName>1</ShortName>
+            </Direction>
+            <Direction id="LU::Direction:2::" version="1654087018">
+              <Name>2</Name>
+              <ShortName>2</ShortName>
+            </Direction>
+          </directions>
+          <lines>
+            <Line id="LU::Line:2784::" version="1654087018">
+              <Name>641</Name>
+              <ShortName>641</ShortName>
+              <TransportMode>bus</TransportMode>
+              <PublicCode>641</PublicCode>
+              <PrivateCode>641</PrivateCode>
+              <AuthorityRef ref="LU::Authority:126::" version="1654087018"/>
+              <additionalOperators>
+                <OperatorRef ref="LU::Operator:1::" version="1654087018"/>
+              </additionalOperators>
+              <allowedDirections>
+                <AllowedLineDirection id="LU::AllowedLineDirection:167::" version="1654087018">
+                  <DirectionRef ref="LU::Direction:1::" version="1654087018"/>
+                </AllowedLineDirection>
+                <AllowedLineDirection id="LU::AllowedLineDirection:168::" version="1654087018">
+                  <DirectionRef ref="LU::Direction:2::" version="1654087018"/>
+                </AllowedLineDirection>
+              </allowedDirections>
+            </Line>
+          </lines>
+          <scheduledStopPoints>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96720201_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.83981599686259</Longitude>
+                <Latitude>50.0094182583741</Latitude>
+              </Location>
+              <ShortName>NIEDERWAMPACH, A Beetel</ShortName>
+              <PublicCode>NIABEE01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96720101_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.84731035281651</Longitude>
+                <Latitude>50.0107288736869</Latitude>
+              </Location>
+              <ShortName>NIEDERWAMPACH, Haaptstrooss</ShortName>
+              <PublicCode>NIHAAP01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96730101_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.85763582975281</Longitude>
+                <Latitude>50.0159392384141</Latitude>
+              </Location>
+              <ShortName>OBERWAMPACH, Bréck</ShortName>
+              <PublicCode>OBBRÉC01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96730201_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.86131111235571</Longitude>
+                <Latitude>50.0161017748595</Latitude>
+              </Location>
+              <ShortName>OBERWAMPACH, Duerefstrooss Belzen</ShortName>
+              <PublicCode>OBDUER01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96450202_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.88353171290518</Longitude>
+                <Latitude>50.0114563644078</Latitude>
+              </Location>
+              <ShortName>DERENBACH, Kapell</ShortName>
+              <PublicCode>DEKAPE02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96450501_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.88890244566243</Longitude>
+                <Latitude>50.0145424201766</Latitude>
+              </Location>
+              <ShortName>DERENBACH, Bei der Kirich</ShortName>
+              <PublicCode>DEBEIK01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96410101_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.90437597678209</Longitude>
+                <Latitude>50.0192478641191</Latitude>
+              </Location>
+              <ShortName>BRACHTENBACH, Om Bierig</ShortName>
+              <PublicCode>BROMBI01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96410201_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.90957683732373</Longitude>
+                <Latitude>50.0206640894794</Latitude>
+              </Location>
+              <ShortName>BRACHTENBACH, Bei der Kirich</ShortName>
+              <PublicCode>BRBEIK01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96820101_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.94793857744887</Longitude>
+                <Latitude>50.0163904972449</Latitude>
+              </Location>
+              <ShortName>SELSCHEID, Dirwis</ShortName>
+              <PublicCode>SEDIRW01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96820201_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.94775390615396</Longitude>
+                <Latitude>50.0173212452545</Latitude>
+              </Location>
+              <ShortName>SELSCHEID, Ennëscht Wis</ShortName>
+              <PublicCode>SEENNË01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96820301_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.94885551362168</Longitude>
+                <Latitude>50.0199861404662</Latitude>
+              </Location>
+              <ShortName>SELSCHEID, Roudebësch</ShortName>
+              <PublicCode>SEROUD01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:97750401_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.97207654487942</Longitude>
+                <Latitude>50.0321730138089</Latitude>
+              </Location>
+              <ShortName>WEICHERDANGE, Kirelshaff</ShortName>
+              <PublicCode>WEKIRE01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:97750301_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.9848394826254</Longitude>
+                <Latitude>50.0377773547576</Latitude>
+              </Location>
+              <ShortName>WEICHERDANGE, Café Bourg</ShortName>
+              <PublicCode>WECAFÉ01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:97750101_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.98810251608923</Longitude>
+                <Latitude>50.036971535689</Latitude>
+              </Location>
+              <ShortName>WEICHERDANGE, Kiirch</ShortName>
+              <PublicCode>WEKIIR01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:97650101_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>6.01579538281091</Longitude>
+                <Latitude>50.0399725449465</Latitude>
+              </Location>
+              <ShortName>MECHER (Clervaux), Dueref</ShortName>
+              <PublicCode>MEDUER01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:97090202_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>6.02580124646584</Longitude>
+                <Latitude>50.0541285840599</Latitude>
+              </Location>
+              <ShortName>CLERVAUX, Police</ShortName>
+              <PublicCode>CLPOLI02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:97110101_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>6.02953732653813</Longitude>
+                <Latitude>50.0531358128572</Latitude>
+              </Location>
+              <ShortName>CLERVAUX, Place de la Libération</ShortName>
+              <PublicCode>CLLIBÉ01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:97110301_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>6.03017743979489</Longitude>
+                <Latitude>50.054987408247</Latitude>
+              </Location>
+              <ShortName>CLERVAUX, Postes</ShortName>
+              <PublicCode>CLPOST01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:97110401_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>6.02557061803663</Longitude>
+                <Latitude>50.0578560462742</Latitude>
+              </Location>
+              <ShortName>CLERVAUX, Maison de Retraite</ShortName>
+              <PublicCode>CLMAIS01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:97070102_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>6.02426650930865</Longitude>
+                <Latitude>50.0631212867325</Latitude>
+              </Location>
+              <ShortName>CLERVAUX, Gare Quai 2</ShortName>
+              <PublicCode>CLGARE02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:97110402_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>6.02558845987601</Longitude>
+                <Latitude>50.057793531258</Latitude>
+              </Location>
+              <ShortName>CLERVAUX, Maison de Retraite</ShortName>
+              <PublicCode>CLMAIS02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:97110201_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>6.03106963891311</Longitude>
+                <Latitude>50.0547943463205</Latitude>
+              </Location>
+              <ShortName>CLERVAUX, Place Benelux</ShortName>
+              <PublicCode>CLBENE01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:97090201_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>6.025571929449</Longitude>
+                <Latitude>50.0542216597717</Latitude>
+              </Location>
+              <ShortName>CLERVAUX, Police</ShortName>
+              <PublicCode>CLPOLI01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:97650102_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>6.01581825955761</Longitude>
+                <Latitude>50.040054098767</Latitude>
+              </Location>
+              <ShortName>MECHER (Clervaux), Dueref</ShortName>
+              <PublicCode>MEDUER02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:97750102_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.98802154436784</Longitude>
+                <Latitude>50.0371493557619</Latitude>
+              </Location>
+              <ShortName>WEICHERDANGE, Kiirch</ShortName>
+              <PublicCode>WEKIIR02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:97750302_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.98476525356999</Longitude>
+                <Latitude>50.0378473939394</Latitude>
+              </Location>
+              <ShortName>WEICHERDANGE, Café Bourg</ShortName>
+              <PublicCode>WECAFÉ02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:97750402_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.97194709896835</Longitude>
+                <Latitude>50.0322326067738</Latitude>
+              </Location>
+              <ShortName>WEICHERDANGE, Kirelshaff</ShortName>
+              <PublicCode>WEKIRE02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96820302_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.94864926979612</Longitude>
+                <Latitude>50.0199357314737</Latitude>
+              </Location>
+              <ShortName>SELSCHEID, Roudebësch</ShortName>
+              <PublicCode>SEROUD02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96820202_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.94761224206522</Longitude>
+                <Latitude>50.0173535006479</Latitude>
+              </Location>
+              <ShortName>SELSCHEID, Ennëscht Wis</ShortName>
+              <PublicCode>SEENNË02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96820102_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.94780033307138</Longitude>
+                <Latitude>50.0163688653927</Latitude>
+              </Location>
+              <ShortName>SELSCHEID, Dirwis</ShortName>
+              <PublicCode>SEDIRW02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96410202_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.90947407352726</Longitude>
+                <Latitude>50.0207423168725</Latitude>
+              </Location>
+              <ShortName>BRACHTENBACH, Bei der Kirich</ShortName>
+              <PublicCode>BRBEIK02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96410102_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.9042302367289</Longitude>
+                <Latitude>50.0193429320157</Latitude>
+              </Location>
+              <ShortName>BRACHTENBACH, Om Bierig</ShortName>
+              <PublicCode>BROMBI02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96450502_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.8888676065908</Longitude>
+                <Latitude>50.0146494412771</Latitude>
+              </Location>
+              <ShortName>DERENBACH, Bei der Kirich</ShortName>
+              <PublicCode>DEBEIK02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96450201_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.88362057714825</Longitude>
+                <Latitude>50.0111618738028</Latitude>
+              </Location>
+              <ShortName>DERENBACH, Kapell</ShortName>
+              <PublicCode>DEKAPE01</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96730202_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.86125185033671</Longitude>
+                <Latitude>50.0161541486561</Latitude>
+              </Location>
+              <ShortName>OBERWAMPACH, Duerefstrooss Belzen</ShortName>
+              <PublicCode>OBDUER02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96730102_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.85772459506972</Longitude>
+                <Latitude>50.0160765901159</Latitude>
+              </Location>
+              <ShortName>OBERWAMPACH, Bréck</ShortName>
+              <PublicCode>OBBRÉC02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96720102_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.84708797509575</Longitude>
+                <Latitude>50.0107138293758</Latitude>
+              </Location>
+              <ShortName>NIEDERWAMPACH, Haaptstrooss</ShortName>
+              <PublicCode>NIHAAP02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="LU::ScheduledStopPoint:96720202_RGTR_::" version="1654087018">
+              <Location>
+                <Longitude>5.84014138278317</Longitude>
+                <Latitude>50.009777988287</Latitude>
+              </Location>
+              <ShortName>NIEDERWAMPACH, A Beetel</ShortName>
+              <PublicCode>NIABEE02</PublicCode>
+              <StopType>busStation</StopType>
+            </ScheduledStopPoint>
+          </scheduledStopPoints>
+          <serviceLinks>
+            <ServiceLink id="LU::ServiceLink:28832__29362_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96720101_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96720201_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:29362__28910_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96730101_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96720101_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:28910__40271_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96730201_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96730101_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:40271__27494_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96450202_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96730201_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:27494__27495_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96450501_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96450202_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:27495__27277_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96410101_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96450501_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:27277__27275_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96410201_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96410101_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:27275__29424_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96820101_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96410201_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:29424__29426_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96820201_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96820101_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:29426__29428_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96820301_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96820201_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:29428__29767_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:97750401_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96820301_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:29767__29763_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:97750301_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:97750401_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:29763__29765_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:97750101_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:97750301_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:29765__43180_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:97650101_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:97750101_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:43180__27390_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:97090202_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:97650101_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:27390__27392_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:97110101_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:97090202_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:27392__34238_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:97110301_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:97110101_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:34238__27395_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:97110401_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:97110301_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:27395__50101_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:97070102_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:97110401_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:50101__27396_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:97110402_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:97070102_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:27396__27385_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:97110201_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:97110402_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:27385__27389_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:97090201_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:97110201_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:27389__43181_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:97650102_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:97090201_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:43181__29766_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:97750102_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:97650102_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:29766__29764_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:97750302_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:97750102_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:29764__29768_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:97750402_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:97750302_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:29768__29429_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96820302_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:97750402_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:29429__29427_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96820202_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96820302_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:29427__29425_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96820102_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96820202_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:29425__27276_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96410202_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96820102_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:27276__27278_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96410102_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96410202_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:27278__27496_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96450502_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96410102_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:27496__27493_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96450201_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96450502_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:27493__40272_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96730202_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96450201_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:40272__28911_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96730102_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96730202_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:28911__29363_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96720102_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96730102_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+            <ServiceLink id="LU::ServiceLink:29363__28833_::" version="1654087018">
+              <FromPointRef ref="LU::ScheduledStopPoint:96720202_RGTR_::" version="1654087018"/>
+              <ToPointRef ref="LU::ScheduledStopPoint:96720102_RGTR_::" version="1654087018"/>
+            </ServiceLink>
+          </serviceLinks>
+          <connections>
+            <SiteConnection id="LU::SiteConnection:1556::" version="1654087018">
+              <WalkTransferDuration>
+                <DefaultDuration>PT32S</DefaultDuration>
+              </WalkTransferDuration>
+              <BothWays>true</BothWays>
+              <From>
+                <StopPlaceRef ref="LU::StopPlace:0_CdT::" version="1654087018"/>
+                <QuayRef ref="LU::Quay:1_CdT::" version="1654087018"/>
+              </From>
+              <To>
+                <StopPlaceRef ref="LU::StopPlace:0_CdT::" version="1654087018"/>
+                <QuayRef ref="LU::Quay:2_CdT::" version="1654087018"/>
+              </To>
+            </SiteConnection>
+            <SiteConnection id="LU::SiteConnection:1557::" version="1654087018">
+              <WalkTransferDuration>
+                <DefaultDuration>PT36S</DefaultDuration>
+              </WalkTransferDuration>
+              <BothWays>true</BothWays>
+              <From>
+                <StopPlaceRef ref="LU::StopPlace:0_CdT::" version="1654087018"/>
+                <QuayRef ref="LU::Quay:1_CdT::" version="1654087018"/>
+              </From>
+              <To>
+                <StopPlaceRef ref="LU::StopPlace:0_CdT::" version="1654087018"/>
+                <QuayRef ref="LU::Quay:3_CdT::" version="1654087018"/>
+              </To>
+            </SiteConnection>
+            <SiteConnection id="LU::SiteConnection:1558::" version="1654087018">
+              <WalkTransferDuration>
+                <DefaultDuration>PT40S</DefaultDuration>
+              </WalkTransferDuration>
+              <BothWays>true</BothWays>
+              <From>
+                <StopPlaceRef ref="LU::StopPlace:0_CdT::" version="1654087018"/>
+                <QuayRef ref="LU::Quay:1_CdT::" version="1654087018"/>
+              </From>
+              <To>
+                <StopPlaceRef ref="LU::StopPlace:0_CdT::" version="1654087018"/>
+                <QuayRef ref="LU::Quay:4_CdT::" version="1654087018"/>
+              </To>
+            </SiteConnection>
+            <SiteConnection id="LU::SiteConnection:1559::" version="1654087018">
+              <WalkTransferDuration>
+                <DefaultDuration>PT30S</DefaultDuration>
+              </WalkTransferDuration>
+              <BothWays>true</BothWays>
+              <From>
+                <StopPlaceRef ref="LU::StopPlace:0_CdT::" version="1654087018"/>
+                <QuayRef ref="LU::Quay:2_CdT::" version="1654087018"/>
+              </From>
+              <To>
+                <StopPlaceRef ref="LU::StopPlace:0_CdT::" version="1654087018"/>
+                <QuayRef ref="LU::Quay:3_CdT::" version="1654087018"/>
+              </To>
+            </SiteConnection>
+            <SiteConnection id="LU::SiteConnection:1560::" version="1654087018">
+              <WalkTransferDuration>
+                <DefaultDuration>PT35S</DefaultDuration>
+              </WalkTransferDuration>
+              <BothWays>true</BothWays>
+              <From>
+                <StopPlaceRef ref="LU::StopPlace:0_CdT::" version="1654087018"/>
+                <QuayRef ref="LU::Quay:2_CdT::" version="1654087018"/>
+              </From>
+              <To>
+                <StopPlaceRef ref="LU::StopPlace:0_CdT::" version="1654087018"/>
+                <QuayRef ref="LU::Quay:4_CdT::" version="1654087018"/>
+              </To>
+            </SiteConnection>
+            <SiteConnection id="LU::SiteConnection:1561::" version="1654087018">
+              <WalkTransferDuration>
+                <DefaultDuration>PT29S</DefaultDuration>
+              </WalkTransferDuration>
+              <BothWays>true</BothWays>
+              <From>
+                <StopPlaceRef ref="LU::StopPlace:0_CdT::" version="1654087018"/>
+                <QuayRef ref="LU::Quay:3_CdT::" version="1654087018"/>
+              </From>
+              <To>
+                <StopPlaceRef ref="LU::StopPlace:0_CdT::" version="1654087018"/>
+                <QuayRef ref="LU::Quay:4_CdT::" version="1654087018"/>
+              </To>
+            </SiteConnection>
+          </connections>
+          <stopAssignments>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2909::" order="1" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97750302_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110105001_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110104902_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2910::" order="2" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96820201_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:120304003_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:120300701_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2911::" order="3" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96720101_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110818001_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110804101_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2912::" order="4" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96720201_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110814001_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110804001_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2913::" order="5" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96410202_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110804001_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110803102_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2914::" order="6" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96730101_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110815001_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110804201_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2915::" order="7" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97750402_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110105003_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110105102_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2916::" order="8" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96730201_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110815002_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110806001_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2917::" order="9" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96730202_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110815002_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110806002_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2918::" order="10" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96410101_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110804002_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110803201_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2919::" order="11" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97750401_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110105003_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110105101_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2920::" order="12" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96450202_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110807001_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110803402_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2921::" order="13" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97750102_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110105002_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110105002_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2922::" order="14" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96450501_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110807003_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110803001_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2923::" order="15" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96410201_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110804001_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110803101_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2924::" order="16" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96820301_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:120304002_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:120300601_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2925::" order="17" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97750301_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110105001_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110104901_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2926::" order="18" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97750101_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110105002_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110105001_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2927::" order="19" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97650101_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110106001_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110104601_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2928::" order="20" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97090202_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110101010_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110100402_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2929::" order="21" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97110101_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110101008_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110100901_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2930::" order="22" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97110301_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110101011_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110101001_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2931::" order="23" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97110401_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110101004_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110100201_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2932::" order="24" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97070102_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:0_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:2_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2933::" order="25" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97110402_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110101004_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110100202_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2934::" order="26" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97110201_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110101009_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110100301_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2935::" order="27" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97090201_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110101010_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110100401_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2936::" order="28" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97650102_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110106001_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110104602_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2937::" order="29" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96820302_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:120304002_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:120300602_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2938::" order="30" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96720102_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110818001_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110804102_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2939::" order="31" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96820202_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:120304003_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:120300702_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2940::" order="32" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96730102_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110815001_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110804202_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2941::" order="33" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96410102_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110804002_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110803202_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2942::" order="34" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96720202_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110814001_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110804002_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2943::" order="35" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96450502_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110807003_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110803002_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="LU::PassengerStopAssignment:2944::" order="36" version="1654087018">
+              <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96450201_RGTR_::" version="1654087018"/>
+              <StopPlaceRef ref="LU::StopPlace:110807001_CdT::" version="1654087018"/>
+              <QuayRef ref="LU::Quay:110803401_MM_CdT::" version="1654087018"/>
+            </PassengerStopAssignment>
+          </stopAssignments>
+          <journeyPatterns>
+            <ServiceJourneyPattern id="LU::ServiceJourneyPattern:399207_0::" version="1654087018">
+              <RouteView id="LU::RouteView:399207_1::">
+                <LineRef ref="LU::Line:2784::" version="1654087018"/>
+              </RouteView>
+              <DirectionRef ref="LU::Direction:1::" version="1654087018"/>
+              <noticeAssignments>
+                <NoticeAssignment id="LU::NoticeAssignment:672::" order="1" version="1654087018">
+                  <Notice id="LU::Notice:2_260::" version="1654087018">
+                    <Text lang="de">Fahrtart : S</Text>
+                    <PublicCode>FAHRA</PublicCode>
+                  </Notice>
+                  <StartPointInPatternRef ref="LU::StopPointInJourneyPattern:399207_1_0::" version="1654087018"/>
+                  <EndPointInPatternRef ref="LU::StopPointInJourneyPattern:399207_1_19::" version="1654087018"/>
+                </NoticeAssignment>
+                <NoticeAssignment id="LU::NoticeAssignment:673::" order="2" version="1654087018">
+                  <Notice id="LU::Notice:19_261::" version="1654087018">
+                    <Text lang="de">Fremdunternehmer : Autocars	ROSS TROINE</Text>
+                    <PublicCode>FRDET</PublicCode>
+                  </Notice>
+                  <StartPointInPatternRef ref="LU::StopPointInJourneyPattern:399207_1_0::" version="1654087018"/>
+                  <EndPointInPatternRef ref="LU::StopPointInJourneyPattern:399207_1_19::" version="1654087018"/>
+                </NoticeAssignment>
+                <NoticeAssignment id="LU::NoticeAssignment:674::" order="3" version="1654087018">
+                  <Notice id="LU::Notice:922_262::" version="1654087018">
+                    <Text lang="de">Linientextfarbinformationen : rgb(255,255,255)</Text>
+                    <PublicCode>PR_CT</PublicCode>
+                  </Notice>
+                  <StartPointInPatternRef ref="LU::StopPointInJourneyPattern:399207_1_0::" version="1654087018"/>
+                  <EndPointInPatternRef ref="LU::StopPointInJourneyPattern:399207_1_19::" version="1654087018"/>
+                </NoticeAssignment>
+                <NoticeAssignment id="LU::NoticeAssignment:675::" order="4" version="1654087018">
+                  <Notice id="LU::Notice:921_263::" version="1654087018">
+                    <Text lang="de">Linienfarbinformationen : rgb(0,0,0)</Text>
+                    <PublicCode>PR_COL</PublicCode>
+                  </Notice>
+                  <StartPointInPatternRef ref="LU::StopPointInJourneyPattern:399207_1_0::" version="1654087018"/>
+                  <EndPointInPatternRef ref="LU::StopPointInJourneyPattern:399207_1_19::" version="1654087018"/>
+                </NoticeAssignment>
+              </noticeAssignments>
+              <pointsInSequence>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_0::" order="1" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96720201_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_1::" order="2" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96720101_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_2::" order="3" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96730101_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_3::" order="4" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96730201_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_4::" order="5" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96450202_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_5::" order="6" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96450501_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_6::" order="7" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96410101_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_7::" order="8" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96410201_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_8::" order="9" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96820101_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_9::" order="10" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96820201_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_10::" order="11" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96820301_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_11::" order="12" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97750401_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_12::" order="13" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97750301_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_13::" order="14" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97750101_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_14::" order="15" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97650101_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_15::" order="16" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97090202_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_16::" order="17" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97110101_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_17::" order="18" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97110301_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_18::" order="19" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97110401_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399207_1_19::" order="20" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97070102_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+              </pointsInSequence>
+            </ServiceJourneyPattern>
+            <ServiceJourneyPattern id="LU::ServiceJourneyPattern:399208_0::" version="1654087018">
+              <RouteView id="LU::RouteView:399208_1::">
+                <LineRef ref="LU::Line:2784::" version="1654087018"/>
+              </RouteView>
+              <DirectionRef ref="LU::Direction:2::" version="1654087018"/>
+              <noticeAssignments>
+                <NoticeAssignment id="LU::NoticeAssignment:676::" order="1" version="1654087018">
+                  <NoticeRef ref="LU::Notice:2_260::" version="1654087018"/>
+                  <StartPointInPatternRef ref="LU::StopPointInJourneyPattern:399208_1_0::" version="1654087018"/>
+                  <EndPointInPatternRef ref="LU::StopPointInJourneyPattern:399208_1_18::" version="1654087018"/>
+                </NoticeAssignment>
+                <NoticeAssignment id="LU::NoticeAssignment:677::" order="2" version="1654087018">
+                  <NoticeRef ref="LU::Notice:19_261::" version="1654087018"/>
+                  <StartPointInPatternRef ref="LU::StopPointInJourneyPattern:399208_1_0::" version="1654087018"/>
+                  <EndPointInPatternRef ref="LU::StopPointInJourneyPattern:399208_1_18::" version="1654087018"/>
+                </NoticeAssignment>
+                <NoticeAssignment id="LU::NoticeAssignment:678::" order="3" version="1654087018">
+                  <NoticeRef ref="LU::Notice:922_262::" version="1654087018"/>
+                  <StartPointInPatternRef ref="LU::StopPointInJourneyPattern:399208_1_0::" version="1654087018"/>
+                  <EndPointInPatternRef ref="LU::StopPointInJourneyPattern:399208_1_18::" version="1654087018"/>
+                </NoticeAssignment>
+                <NoticeAssignment id="LU::NoticeAssignment:679::" order="4" version="1654087018">
+                  <NoticeRef ref="LU::Notice:921_263::" version="1654087018"/>
+                  <StartPointInPatternRef ref="LU::StopPointInJourneyPattern:399208_1_0::" version="1654087018"/>
+                  <EndPointInPatternRef ref="LU::StopPointInJourneyPattern:399208_1_18::" version="1654087018"/>
+                </NoticeAssignment>
+              </noticeAssignments>
+              <pointsInSequence>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_0::" order="1" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97070102_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_1::" order="2" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97110402_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_2::" order="3" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97110201_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_3::" order="4" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97090201_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_4::" order="5" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97650102_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_5::" order="6" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97750102_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_6::" order="7" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97750302_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_7::" order="8" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:97750402_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_8::" order="9" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96820302_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_9::" order="10" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96820202_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_10::" order="11" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96820102_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_11::" order="12" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96410202_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_12::" order="13" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96410102_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_13::" order="14" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96450502_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_14::" order="15" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96450201_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_15::" order="16" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96730202_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_16::" order="17" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96730102_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_17::" order="18" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96720102_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="LU::StopPointInJourneyPattern:399208_1_18::" order="19" version="1654087018">
+                  <ScheduledStopPointRef ref="LU::ScheduledStopPoint:96720202_RGTR_::" version="1654087018"/>
+                  <ForAlighting>true</ForAlighting>
+                  <ForBoarding>true</ForBoarding>
+                  <ChangeOfDestinationDisplay>false</ChangeOfDestinationDisplay>
+                </StopPointInJourneyPattern>
+              </pointsInSequence>
+            </ServiceJourneyPattern>
+          </journeyPatterns>
+        </ServiceFrame>
+        <SiteFrame id="LU::SiteFrame_EU_PI_STOP:RGTR-RGTR-641" version="1654087018">
+          <TypeOfFrameRef ref="epip:EU_PI_STOP" versionRef="1.0"/>
+          <topographicPlaces>
+            <TopographicPlace id="LU::TopographicPlace:113::" version="1654087018">
+              <Name>CLERVAUX</Name>
+              <IsoCode>014</IsoCode>
+              <Descriptor>
+                <Name>CLERVAUX</Name>
+              </Descriptor>
+            </TopographicPlace>
+            <TopographicPlace id="LU::TopographicPlace:35::" version="1654087018">
+              <Name>WILTZ</Name>
+              <IsoCode>099</IsoCode>
+              <Descriptor>
+                <Name>WILTZ</Name>
+              </Descriptor>
+            </TopographicPlace>
+            <TopographicPlace id="LU::TopographicPlace:20::" version="1654087018">
+              <Name>WINCRANGE</Name>
+              <IsoCode>100</IsoCode>
+              <Descriptor>
+                <Name>WINCRANGE</Name>
+              </Descriptor>
+            </TopographicPlace>
+          </topographicPlaces>
+          <stopPlaces>
+            <StopPlace id="LU::StopPlace:0_CdT::" version="1654087018">
+              <Name>Clervaux, Gare routière/Lycée</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>6.02430568634377</Longitude>
+                  <Latitude>50.0636170764826</Latitude>
+                </Location>
+              </Centroid>
+              <TopographicPlaceRef ref="LU::TopographicPlace:113::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <levels>
+                <Level id="LU::Level:515_0::" version="1654087018">
+                  <ShortName>0</ShortName>
+                </Level>
+              </levels>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:1_CdT::" version="1654087018">
+                  <Name>Clervaux, Gare routière/Lycée</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>6.02429173335022</Longitude>
+                      <Latitude>50.0636167184844</Latitude>
+                    </Location>
+                  </Centroid>
+                  <alternativeNames>
+                    <AlternativeName>
+                      <Lang>de</Lang>
+                      <Name>zur Haltestelle Clervaux, Gare routière/Lycée</Name>
+                    </AlternativeName>
+                    <AlternativeName>
+                      <Lang>en</Lang>
+                      <Name>to the stop Clervaux, Gare routière/Lycée</Name>
+                    </AlternativeName>
+                    <AlternativeName>
+                      <Lang>fr</Lang>
+                      <Name>vers l'arrêt Clervaux, Gare routière/Lycée</Name>
+                    </AlternativeName>
+                  </alternativeNames>
+                  <LevelRef ref="LU::Level:515_0::" version="1654087018"/>
+                </Quay>
+                <Quay id="LU::Quay:2_CdT::" version="1654087018">
+                  <Name>Clervaux, Gare routière/Lycée</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>6.02418122173595</Longitude>
+                      <Latitude>50.0635958908128</Latitude>
+                    </Location>
+                  </Centroid>
+                  <alternativeNames>
+                    <AlternativeName>
+                      <Lang>de</Lang>
+                      <Name>zur Haltestelle Clervaux, Gare routière/Lycée</Name>
+                    </AlternativeName>
+                    <AlternativeName>
+                      <Lang>en</Lang>
+                      <Name>to the stop Clervaux, Gare routière/Lycée</Name>
+                    </AlternativeName>
+                    <AlternativeName>
+                      <Lang>fr</Lang>
+                      <Name>vers l'arrêt Clervaux, Gare routière/Lycée</Name>
+                    </AlternativeName>
+                  </alternativeNames>
+                  <LevelRef ref="LU::Level:515_0::" version="1654087018"/>
+                </Quay>
+                <Quay id="LU::Quay:3_CdT::" version="1654087018">
+                  <Name>Clervaux, Gare routière/Lycée</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>6.02409806000239</Longitude>
+                      <Latitude>50.063584760897</Latitude>
+                    </Location>
+                  </Centroid>
+                  <alternativeNames>
+                    <AlternativeName>
+                      <Lang>de</Lang>
+                      <Name>zur Haltestelle Clervaux, Gare routière/Lycée</Name>
+                    </AlternativeName>
+                    <AlternativeName>
+                      <Lang>en</Lang>
+                      <Name>to the stop Clervaux, Gare routière/Lycée</Name>
+                    </AlternativeName>
+                    <AlternativeName>
+                      <Lang>fr</Lang>
+                      <Name>vers l'arrêt Clervaux, Gare routière/Lycée</Name>
+                    </AlternativeName>
+                  </alternativeNames>
+                  <LevelRef ref="LU::Level:515_0::" version="1654087018"/>
+                </Quay>
+                <Quay id="LU::Quay:4_CdT::" version="1654087018">
+                  <Name>Clervaux, Gare routière/Lycée</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>6.02393224505706</Longitude>
+                      <Latitude>50.0633286157671</Latitude>
+                    </Location>
+                  </Centroid>
+                  <alternativeNames>
+                    <AlternativeName>
+                      <Lang>de</Lang>
+                      <Name>zur Haltestelle Clervaux, Gare routière/Lycée</Name>
+                    </AlternativeName>
+                    <AlternativeName>
+                      <Lang>en</Lang>
+                      <Name>to the stop Clervaux, Gare routière/Lycée</Name>
+                    </AlternativeName>
+                    <AlternativeName>
+                      <Lang>fr</Lang>
+                      <Name>vers l'arrêt Clervaux, Gare routière/Lycée</Name>
+                    </AlternativeName>
+                  </alternativeNames>
+                  <LevelRef ref="LU::Level:515_0::" version="1654087018"/>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:110105001_CdT::" version="1654087018">
+              <Name>Weicherdange, Café Bourg</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>5.98472735961673</Longitude>
+                  <Latitude>50.0377834353864</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Wäicherdang, Café Bourg</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="LU::TopographicPlace:113::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:110104902_MM_CdT::" version="1654087018">
+                  <Name>Weicherdange, Café Bourg</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.98457509070949</Longitude>
+                      <Latitude>50.037761483418</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="LU::Quay:110104901_MM_CdT::" version="1654087018">
+                  <Name>Weicherdange, Café Bourg</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.9848394826254</Longitude>
+                      <Latitude>50.0377773547576</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:120304003_CdT::" version="1654087018">
+              <Name>Selscheid, Ennëscht Wis</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>5.94771379887243</Longitude>
+                  <Latitude>50.01729320063</Latitude>
+                </Location>
+              </Centroid>
+              <TopographicPlaceRef ref="LU::TopographicPlace:35::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:120300701_MM_CdT::" version="1654087018">
+                  <Name>Selscheid, Ennëscht Wis</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.94785660167576</Longitude>
+                      <Latitude>50.0172429825998</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="LU::Quay:120300702_MM_CdT::" version="1654087018">
+                  <Name>Selscheid, Ennëscht Wis</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.94757042624326</Longitude>
+                      <Latitude>50.0173523997297</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:110818001_CdT::" version="1654087018">
+              <Name>Niederwampach, Haaptstrooss</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>5.84717864455708</Longitude>
+                  <Latitude>50.0106083384953</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Schimpach</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Schëmpech</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="LU::TopographicPlace:20::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:110804101_MM_CdT::" version="1654087018">
+                  <Name>Niederwampach, Haaptstrooss</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.84723085730468</Longitude>
+                      <Latitude>50.0106637369153</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="LU::Quay:110804102_MM_CdT::" version="1654087018">
+                  <Name>Niederwampach, Haaptstrooss</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.84706245689427</Longitude>
+                      <Latitude>50.0106771497307</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:110814001_CdT::" version="1654087018">
+              <Name>Niederwampach, A Beetel</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>5.8398738824429</Longitude>
+                  <Latitude>50.0095997646501</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Nidderwampech</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Niederwampach</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="LU::TopographicPlace:20::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:110804001_MM_CdT::" version="1654087018">
+                  <Name>Niederwampach, A Beetel</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.83976025731237</Longitude>
+                      <Latitude>50.009416738867</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="LU::Quay:110804002_MM_CdT::" version="1654087018">
+                  <Name>Niederwampach, A Beetel</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.84009957779489</Longitude>
+                      <Latitude>50.0097768487705</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:110804001_CdT::" version="1654087018">
+              <Name>Brachtenbach, Bei der Kirich</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>5.90947638034088</Longitude>
+                  <Latitude>50.0207063931711</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Brachtenbach</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Bruechtebaach</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="LU::TopographicPlace:20::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:110803102_MM_CdT::" version="1654087018">
+                  <Name>Brachtenbach, Bei der Kirich</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.90940437808199</Longitude>
+                      <Latitude>50.0207404590059</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="LU::Quay:110803101_MM_CdT::" version="1654087018">
+                  <Name>Brachtenbach, Bei der Kirich</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.90946532478505</Longitude>
+                      <Latitude>50.0206611169749</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:110815001_CdT::" version="1654087018">
+              <Name>Oberwampach, Bréck</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>5.85759916159745</Longitude>
+                  <Latitude>50.0160731902151</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Uewerwampech, Bréck</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="LU::TopographicPlace:20::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:110804201_MM_CdT::" version="1654087018">
+                  <Name>Oberwampach, Bréck</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.85753592552316</Longitude>
+                      <Latitude>50.0159725159452</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="LU::Quay:110804202_MM_CdT::" version="1654087018">
+                  <Name>Oberwampach, Bréck</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.85763862767068</Longitude>
+                      <Latitude>50.0161102454892</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:110105003_CdT::" version="1654087018">
+              <Name>Weicherdange, Kirelshaff</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>5.97202133730021</Longitude>
+                  <Latitude>50.0321625759243</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Wäicherdang, Kirelshaff</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="LU::TopographicPlace:113::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:110105102_MM_CdT::" version="1654087018">
+                  <Name>Weicherdange, Kirelshaff</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.97195049068553</Longitude>
+                      <Latitude>50.0321787181849</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="LU::Quay:110105101_MM_CdT::" version="1654087018">
+                  <Name>Weicherdange, Kirelshaff</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.97207937118444</Longitude>
+                      <Latitude>50.0321281066456</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:110815002_CdT::" version="1654087018">
+              <Name>Oberwampach, Duerefstrooss Belzen</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>5.86111599285848</Longitude>
+                  <Latitude>50.0160964920948</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Oberwampach, Belzen</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="LU::TopographicPlace:20::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:110806001_MM_CdT::" version="1654087018">
+                  <Name>Oberwampach, Duerefstrooss Belzen</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.86131111235571</Longitude>
+                      <Latitude>50.0161017748595</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="LU::Quay:110806002_MM_CdT::" version="1654087018">
+                  <Name>Oberwampach, Duerefstrooss Belzen</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.86083256541565</Longitude>
+                      <Latitude>50.0161607888569</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:110804002_CdT::" version="1654087018">
+              <Name>Brachtenbach, Om Bierig</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>5.90331426260121</Longitude>
+                  <Latitude>50.0190395842974</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Brachtenbach, Maison 3</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Bruechtebaach Maison 3</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="LU::TopographicPlace:20::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:110803201_MM_CdT::" version="1654087018">
+                  <Name>Brachtenbach, Om Bierig</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.90331715168505</Longitude>
+                      <Latitude>50.0189946799185</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="LU::Quay:110803202_MM_CdT::" version="1654087018">
+                  <Name>Brachtenbach, Om Bierig</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.90350651294467</Longitude>
+                      <Latitude>50.0190897007177</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:110807001_CdT::" version="1654087018">
+              <Name>Derenbach, Kapell</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>5.88351197971479</Longitude>
+                  <Latitude>50.0113298850699</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Derenbach, Chapelle</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Déierbech, Chapelle</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="LU::TopographicPlace:20::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:110803402_MM_CdT::" version="1654087018">
+                  <Name>Derenbach, Kapell</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.88333660807803</Longitude>
+                      <Latitude>50.0114511193573</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="LU::Quay:110803401_MM_CdT::" version="1654087018">
+                  <Name>Derenbach, Kapell</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.88364496117</Longitude>
+                      <Latitude>50.0112165073671</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:110105002_CdT::" version="1654087018">
+              <Name>Weicherdange, Kierch</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>5.98806900272381</Longitude>
+                  <Latitude>50.0370606268417</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Wäicherdang, Kiirch</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="LU::TopographicPlace:113::" version="1654087018"/>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:110105002_MM_CdT::" version="1654087018">
+                  <Name>Weicherdange, Kierch</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.98802154436784</Longitude>
+                      <Latitude>50.0371493557619</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="LU::Quay:110105001_MM_CdT::" version="1654087018">
+                  <Name>Weicherdange, Kierch</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.98810251608923</Longitude>
+                      <Latitude>50.036971535689</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:110807003_CdT::" version="1654087018">
+              <Name>Derenbach, Bei der Kirich</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>5.88885947374998</Longitude>
+                  <Latitude>50.0145592596691</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Derenbach, Kiirch</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Déierbech, Kiirch</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="LU::TopographicPlace:20::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:110803001_MM_CdT::" version="1654087018">
+                  <Name>Derenbach, Bei der Kirich</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.88886295626454</Longitude>
+                      <Latitude>50.0145053751106</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="LU::Quay:110803002_MM_CdT::" version="1654087018">
+                  <Name>Derenbach, Bei der Kirich</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.88886876743083</Longitude>
+                      <Latitude>50.0146314797579</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:120304002_CdT::" version="1654087018">
+              <Name>Selscheid, Roudebësch</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>5.94877643220454</Longitude>
+                  <Latitude>50.0199120893676</Latitude>
+                </Location>
+              </Centroid>
+              <TopographicPlaceRef ref="LU::TopographicPlace:35::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:120300601_MM_CdT::" version="1654087018">
+                  <Name>Selscheid, Roudebësch</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.94883275900905</Longitude>
+                      <Latitude>50.0199045754721</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="LU::Quay:120300602_MM_CdT::" version="1654087018">
+                  <Name>Selscheid, Roudebësch</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>5.94870388852296</Longitude>
+                      <Latitude>50.0199551614114</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:110106001_CdT::" version="1654087018">
+              <Name>Mecher, Dueref</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>6.01580654254523</Longitude>
+                  <Latitude>50.0400178127477</Latitude>
+                </Location>
+              </Centroid>
+              <TopographicPlaceRef ref="LU::TopographicPlace:113::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:110104601_MM_CdT::" version="1654087018">
+                  <Name>Mecher, Dueref</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>6.01579538281091</Longitude>
+                      <Latitude>50.0399725449465</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="LU::Quay:110104602_MM_CdT::" version="1654087018">
+                  <Name>Mecher, Dueref</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>6.01581825955761</Longitude>
+                      <Latitude>50.040054098767</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:110101010_CdT::" version="1654087018">
+              <Name>Clervaux, Police</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>6.0257030389544</Longitude>
+                  <Latitude>50.054135061478</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Klierf, Police</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="LU::TopographicPlace:113::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:110100402_MM_CdT::" version="1654087018">
+                  <Name>Clervaux, Police</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>6.0256494607151</Longitude>
+                      <Latitude>50.0540977029856</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="LU::Quay:110100401_MM_CdT::" version="1654087018">
+                  <Name>Clervaux, Police</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>6.02568519882787</Longitude>
+                      <Latitude>50.0541975765733</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:110101008_CdT::" version="1654087018">
+              <Name>Clervaux, Pl. de la Libération</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>6.03004555239131</Longitude>
+                  <Latitude>50.0528249702752</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Klierf, Place de la Libération</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="LU::TopographicPlace:113::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:110100901_MM_CdT::" version="1654087018">
+                  <Name>Clervaux, Pl. de la Libération</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>6.03004555239131</Longitude>
+                      <Latitude>50.0528249702752</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:110101011_CdT::" version="1654087018">
+              <Name>Clervaux, Postes</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>6.03085927165054</Longitude>
+                  <Latitude>50.0548069528099</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Klierf, Postes</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="LU::TopographicPlace:113::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:110101001_MM_CdT::" version="1654087018">
+                  <Name>Clervaux, Postes</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>6.03087377691177</Longitude>
+                      <Latitude>50.0547983280925</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:110101004_CdT::" version="1654087018">
+              <Name>Clervaux, Maison de Retraite</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>6.02568834219376</Longitude>
+                  <Latitude>50.0577601085735</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Klierf, Maison de Retraite</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="LU::TopographicPlace:113::" version="1654087018"/>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:110100201_MM_CdT::" version="1654087018">
+                  <Name>Clervaux, Maison de Retraite</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>6.02571402177599</Longitude>
+                      <Latitude>50.0577967515086</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+                <Quay id="LU::Quay:110100202_MM_CdT::" version="1654087018">
+                  <Name>Clervaux, Maison de Retraite</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>6.02566266264973</Longitude>
+                      <Latitude>50.0577234656332</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="LU::StopPlace:110101009_CdT::" version="1654087018">
+              <Name>Clervaux, Place Benelux</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>6.03106963891311</Longitude>
+                  <Latitude>50.0547943463205</Latitude>
+                </Location>
+              </Centroid>
+              <alternativeNames>
+                <AlternativeName>
+                  <Name>Clervaux, Maison Krauser</Name>
+                </AlternativeName>
+                <AlternativeName>
+                  <Name>Klierf, Place Benelux</Name>
+                </AlternativeName>
+              </alternativeNames>
+              <TopographicPlaceRef ref="LU::TopographicPlace:113::" version="1654087018"/>
+              <Locale>
+                <TimeZone>Europe/Berlin</TimeZone>
+              </Locale>
+              <AuthorityRef ref="LU::Authority:1::" version="1654087018"/>
+              <StopPlaceType>other</StopPlaceType>
+              <quays>
+                <Quay id="LU::Quay:110100301_MM_CdT::" version="1654087018">
+                  <Name>Clervaux, Place Benelux</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>6.03106963891311</Longitude>
+                      <Latitude>50.0547943463205</Latitude>
+                    </Location>
+                  </Centroid>
+                </Quay>
+              </quays>
+            </StopPlace>
+          </stopPlaces>
+        </SiteFrame>
+        <TimetableFrame id="LU::TimetableFrame_EU_PI_TIMETABLE:RGTR-RGTR-641" version="1654087018">
+          <TypeOfFrameRef ref="epip:EU_PI_TIMETABLE" versionRef="1.0"/>
+          <vehicleJourneys>
+            <ServiceJourney id="LU::ServiceJourney:12688307_0::" version="1654087018">
+              <TransportMode>bus</TransportMode>
+              <DepartureTime>07:40:00</DepartureTime>
+              <JourneyDuration>PT37M5S</JourneyDuration>
+              <dayTypes>
+                <DayTypeRef ref="LU::DayType:295::" version="1654087018"/>
+              </dayTypes>
+              <ServiceJourneyPatternRef ref="LU::ServiceJourneyPattern:399207_0::" version="1654087018"/>
+              <VehicleTypeRef ref="LU::VehicleType:200::" version="1654087018"/>
+              <passingTimes>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12367::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_0::" version="1654087018"/>
+                  <DepartureTime>07:40:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12368::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_1::" version="1654087018"/>
+                  <ArrivalTime>07:41:00</ArrivalTime>
+                  <DepartureTime>07:41:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12369::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_2::" version="1654087018"/>
+                  <ArrivalTime>07:43:45</ArrivalTime>
+                  <DepartureTime>07:43:45</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12370::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_3::" version="1654087018"/>
+                  <ArrivalTime>07:44:15</ArrivalTime>
+                  <DepartureTime>07:44:15</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12371::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_4::" version="1654087018"/>
+                  <ArrivalTime>07:47:15</ArrivalTime>
+                  <DepartureTime>07:47:15</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12372::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_5::" version="1654087018"/>
+                  <ArrivalTime>07:49:15</ArrivalTime>
+                  <DepartureTime>07:49:15</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12373::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_6::" version="1654087018"/>
+                  <ArrivalTime>07:51:00</ArrivalTime>
+                  <DepartureTime>07:51:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12374::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_7::" version="1654087018"/>
+                  <ArrivalTime>07:52:15</ArrivalTime>
+                  <DepartureTime>07:52:15</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12375::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_8::" version="1654087018"/>
+                  <ArrivalTime>07:59:15</ArrivalTime>
+                  <DepartureTime>07:59:15</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12376::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_9::" version="1654087018"/>
+                  <ArrivalTime>07:59:35</ArrivalTime>
+                  <DepartureTime>07:59:35</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12377::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_10::" version="1654087018"/>
+                  <ArrivalTime>08:00:05</ArrivalTime>
+                  <DepartureTime>08:00:05</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12378::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_11::" version="1654087018"/>
+                  <ArrivalTime>08:04:05</ArrivalTime>
+                  <DepartureTime>08:04:05</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12379::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_12::" version="1654087018"/>
+                  <ArrivalTime>08:06:15</ArrivalTime>
+                  <DepartureTime>08:06:15</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12380::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_13::" version="1654087018"/>
+                  <ArrivalTime>08:06:50</ArrivalTime>
+                  <DepartureTime>08:06:50</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12381::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_14::" version="1654087018"/>
+                  <ArrivalTime>08:11:15</ArrivalTime>
+                  <DepartureTime>08:11:15</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12382::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_15::" version="1654087018"/>
+                  <ArrivalTime>08:13:55</ArrivalTime>
+                  <DepartureTime>08:13:55</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12383::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_16::" version="1654087018"/>
+                  <ArrivalTime>08:14:25</ArrivalTime>
+                  <DepartureTime>08:14:25</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12384::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_17::" version="1654087018"/>
+                  <ArrivalTime>08:15:35</ArrivalTime>
+                  <DepartureTime>08:15:35</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12385::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_18::" version="1654087018"/>
+                  <ArrivalTime>08:16:20</ArrivalTime>
+                  <DepartureTime>08:16:20</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12386::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399207_1_19::" version="1654087018"/>
+                  <ArrivalTime>08:17:05</ArrivalTime>
+                </TimetabledPassingTime>
+              </passingTimes>
+            </ServiceJourney>
+            <ServiceJourney id="LU::ServiceJourney:12688306_0::" version="1654087018">
+              <TransportMode>bus</TransportMode>
+              <DepartureTime>14:55:00</DepartureTime>
+              <JourneyDuration>PT36M10S</JourneyDuration>
+              <dayTypes>
+                <DayTypeRef ref="LU::DayType:295::" version="1654087018"/>
+              </dayTypes>
+              <ServiceJourneyPatternRef ref="LU::ServiceJourneyPattern:399208_0::" version="1654087018"/>
+              <VehicleTypeRef ref="LU::VehicleType:200::" version="1654087018"/>
+              <passingTimes>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12387::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_0::" version="1654087018"/>
+                  <DepartureTime>14:55:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12388::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_1::" version="1654087018"/>
+                  <ArrivalTime>14:56:05</ArrivalTime>
+                  <DepartureTime>14:56:05</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12389::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_2::" version="1654087018"/>
+                  <ArrivalTime>14:57:05</ArrivalTime>
+                  <DepartureTime>14:57:05</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12390::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_3::" version="1654087018"/>
+                  <ArrivalTime>14:58:15</ArrivalTime>
+                  <DepartureTime>14:58:15</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12391::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_4::" version="1654087018"/>
+                  <ArrivalTime>15:00:45</ArrivalTime>
+                  <DepartureTime>15:00:45</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12392::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_5::" version="1654087018"/>
+                  <ArrivalTime>15:05:15</ArrivalTime>
+                  <DepartureTime>15:05:15</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12393::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_6::" version="1654087018"/>
+                  <ArrivalTime>15:05:45</ArrivalTime>
+                  <DepartureTime>15:05:45</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12394::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_7::" version="1654087018"/>
+                  <ArrivalTime>15:08:15</ArrivalTime>
+                  <DepartureTime>15:08:15</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12395::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_8::" version="1654087018"/>
+                  <ArrivalTime>15:12:15</ArrivalTime>
+                  <DepartureTime>15:12:15</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12396::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_9::" version="1654087018"/>
+                  <ArrivalTime>15:12:35</ArrivalTime>
+                  <DepartureTime>15:12:35</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12397::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_10::" version="1654087018"/>
+                  <ArrivalTime>15:12:55</ArrivalTime>
+                  <DepartureTime>15:12:55</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12398::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_11::" version="1654087018"/>
+                  <ArrivalTime>15:19:55</ArrivalTime>
+                  <DepartureTime>15:19:55</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12399::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_12::" version="1654087018"/>
+                  <ArrivalTime>15:20:50</ArrivalTime>
+                  <DepartureTime>15:20:50</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12400::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_13::" version="1654087018"/>
+                  <ArrivalTime>15:22:40</ArrivalTime>
+                  <DepartureTime>15:22:40</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12401::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_14::" version="1654087018"/>
+                  <ArrivalTime>15:24:40</ArrivalTime>
+                  <DepartureTime>15:24:40</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12402::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_15::" version="1654087018"/>
+                  <ArrivalTime>15:27:40</ArrivalTime>
+                  <DepartureTime>15:27:40</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12403::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_16::" version="1654087018"/>
+                  <ArrivalTime>15:28:10</ArrivalTime>
+                  <DepartureTime>15:28:10</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12404::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_17::" version="1654087018"/>
+                  <ArrivalTime>15:30:10</ArrivalTime>
+                  <DepartureTime>15:30:10</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12405::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_18::" version="1654087018"/>
+                  <ArrivalTime>15:31:10</ArrivalTime>
+                </TimetabledPassingTime>
+              </passingTimes>
+            </ServiceJourney>
+            <ServiceJourney id="LU::ServiceJourney:12688305_0::" version="1654087018">
+              <TransportMode>bus</TransportMode>
+              <DepartureTime>16:37:00</DepartureTime>
+              <JourneyDuration>PT37M5S</JourneyDuration>
+              <dayTypes>
+                <DayTypeRef ref="LU::DayType:295::" version="1654087018"/>
+              </dayTypes>
+              <ServiceJourneyPatternRef ref="LU::ServiceJourneyPattern:399208_0::" version="1654087018"/>
+              <VehicleTypeRef ref="LU::VehicleType:200::" version="1654087018"/>
+              <passingTimes>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12406::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_0::" version="1654087018"/>
+                  <DepartureTime>16:37:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12407::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_1::" version="1654087018"/>
+                  <ArrivalTime>16:38:15</ArrivalTime>
+                  <DepartureTime>16:38:15</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12408::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_2::" version="1654087018"/>
+                  <ArrivalTime>16:39:20</ArrivalTime>
+                  <DepartureTime>16:39:20</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12409::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_3::" version="1654087018"/>
+                  <ArrivalTime>16:40:40</ArrivalTime>
+                  <DepartureTime>16:40:40</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12410::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_4::" version="1654087018"/>
+                  <ArrivalTime>16:43:10</ArrivalTime>
+                  <DepartureTime>16:43:10</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12411::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_5::" version="1654087018"/>
+                  <ArrivalTime>16:47:40</ArrivalTime>
+                  <DepartureTime>16:47:40</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12412::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_6::" version="1654087018"/>
+                  <ArrivalTime>16:48:10</ArrivalTime>
+                  <DepartureTime>16:48:10</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12413::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_7::" version="1654087018"/>
+                  <ArrivalTime>16:50:45</ArrivalTime>
+                  <DepartureTime>16:50:45</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12414::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_8::" version="1654087018"/>
+                  <ArrivalTime>16:54:45</ArrivalTime>
+                  <DepartureTime>16:54:45</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12415::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_9::" version="1654087018"/>
+                  <ArrivalTime>16:55:05</ArrivalTime>
+                  <DepartureTime>16:55:05</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12416::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_10::" version="1654087018"/>
+                  <ArrivalTime>16:55:25</ArrivalTime>
+                  <DepartureTime>16:55:25</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12417::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_11::" version="1654087018"/>
+                  <ArrivalTime>17:02:25</ArrivalTime>
+                  <DepartureTime>17:02:25</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12418::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_12::" version="1654087018"/>
+                  <ArrivalTime>17:03:25</ArrivalTime>
+                  <DepartureTime>17:03:25</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12419::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_13::" version="1654087018"/>
+                  <ArrivalTime>17:05:25</ArrivalTime>
+                  <DepartureTime>17:05:25</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12420::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_14::" version="1654087018"/>
+                  <ArrivalTime>17:07:25</ArrivalTime>
+                  <DepartureTime>17:07:25</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12421::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_15::" version="1654087018"/>
+                  <ArrivalTime>17:10:25</ArrivalTime>
+                  <DepartureTime>17:10:25</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12422::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_16::" version="1654087018"/>
+                  <ArrivalTime>17:10:55</ArrivalTime>
+                  <DepartureTime>17:10:55</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12423::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_17::" version="1654087018"/>
+                  <ArrivalTime>17:13:05</ArrivalTime>
+                  <DepartureTime>17:13:05</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="LU::TimetabledPassingTime:12424::" version="1654087018">
+                  <StopPointInJourneyPatternRef ref="LU::StopPointInJourneyPattern:399208_1_18::" version="1654087018"/>
+                  <ArrivalTime>17:14:05</ArrivalTime>
+                </TimetabledPassingTime>
+              </passingTimes>
+            </ServiceJourney>
+          </vehicleJourneys>
+          <vehicleTypes>
+            <VehicleType id="LU::VehicleType:200::" version="1654087018">
+              <Name>C05_Überland / Regional_71pl_12m (RGTR)</Name>
+            </VehicleType>
+          </vehicleTypes>
+        </TimetableFrame>
+      </frames>
+    </CompositeFrame>
+  </dataObjects>
+
+</PublicationDelivery>
