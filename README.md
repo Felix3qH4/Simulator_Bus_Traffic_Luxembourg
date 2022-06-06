@@ -2,6 +2,7 @@
 Simulates where and when the buses in Luxembourg are and how they move from one point to another.
 
 **Currently only contains RGTR buslines**
+
 Last Updated: 05/June/2021
 
 Displays a map with markers which represent the different buses.
@@ -13,7 +14,7 @@ To load your own data, please save your json data like this (or let xml_reader.p
  "222": {
    "stops": {
       "LU::ScheduledStopPoint:14300201_RGTR_::": ["LUX Merl, Geesseknäppchen (S)", ["6.11346393869445", "49.6018360501788"]],
-      "LU::ScheduledStopPoint:58110401_RGTR_::": ["FENTANGE, Duelemerbach", ["6.15103270868228", "49.5700024130446"]]"
+      "LU::ScheduledStopPoint:58110401_RGTR_::": ["FENTANGE, Duelemerbach", ["6.15103270868228", "49.5700024130446"]]
       },
    "links": [
       ["LU::ScheduledStopPoint:14300201_RGTR_::", "LU::ScheduledStopPoint:58110401_RGTR_::"],
